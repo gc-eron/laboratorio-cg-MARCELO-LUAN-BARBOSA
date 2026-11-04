@@ -56,7 +56,23 @@ quadrado = np.zeros((80, 80, 3), dtype=np.uint8)
 quadrado[:, :] = (0, 0, 255)
 col1.image(quadrado, caption="azul")
 
-col2.image(img, channels="BGR", caption="BGR")
+quadrado = np.zeros((80, 80, 3), dtype=np.uint8)
+quadrado[:, :] = (0, 0, 0)
+col2.image(quadrado, caption="preto")
+
+quadrado = np.zeros((80, 80, 3), dtype=np.uint8)
+quadrado[:, :] = (255, 255, 255)
+col2.image(quadrado, caption="branco")
+
+quadrado = np.zeros((80, 80, 3), dtype=np.uint8)
+quadrado[:, :] = (0, 255, 255)
+col2.image(quadrado, caption="ciano")
+
+quadrado = np.zeros((80, 80, 3), dtype=np.uint8)
+quadrado[:, :] = (255, 0, 255)
+col2.image(quadrado, caption="magenta")
+
+col1.image(img, channels="BGR", caption="BGR")
 
 # 4. Tons de cinza
 st.header("4. Tons de cinza")
