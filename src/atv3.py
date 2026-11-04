@@ -12,6 +12,5 @@ y, x = np.indices((64, 64))
 def padrao(x, y, k):
     return ((x // k + y // k) * 30) % 256
 
-
 imagem = padrao(x, y, k).astype(np.uint8)
 st.image(ampliar(imagem, 4))

@@ -31,6 +31,11 @@ so_g[:, :, 0] = 0
 so_g[:, :, 2] = 0
 col2.image(so_g, caption="só G")
 
+so_g = img.copy()
+so_g[:, :, 0] = 0
+so_g[:, :, 1] = 0
+col2.image(so_g, caption="só B")
+
 # 3. Cubo e BGR
 st.header("3. Cubo e BGR")
 col1, col2 = st.columns(2)
